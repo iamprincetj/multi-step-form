@@ -1,0 +1,33 @@
+.thankyou-container {
+    margin: 4.5rem 0;
+    text-align: center;
+}
+
+.thankyou-container .thankyou-icon {
+    width: 50px;
+    margin: 0.5em 0;
+}
+
+.thankyou-container h1 {
+    color: var(--Marineblue);
+    font-size: 1.5rem;
+    margin: 0.5em 0;
+}
+
+.thankyou-container p {
+    color: var(--Coolgray);
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 62em) {
+    .thankyou-container {
+        margin: 10rem 0;
+    }
+
+    .thankyou-container p {
+        line-height: 1.7;
+    }
+}

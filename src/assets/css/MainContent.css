@@ -1,0 +1,105 @@
+.main-container {
+    width: 85%;
+    margin: 2em auto;
+}
+
+.main-container .step-container h1{
+    color: var(--Marineblue);
+    font-family: "Ubuntu-Medium";
+    font-size: 1.5rem;
+    margin: 0.5em 0;    
+}
+
+.main-container .step-container .subtitle{
+    color: var(--Coolgray);
+    font-size: 1rem;
+    margin: 1em 0;
+    line-height: 1.5;  
+}
+
+.main-container .btn-footer {
+    background-color: var(--White);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+
+.main-container .step-container .btn-footer div {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: end;
+}
+
+.main-container .step2-container .btn-footer div,
+.main-container .step3-container .btn-footer div,
+.main-container .step4-container .btn-footer div {
+    justify-content: space-between;
+}
+
+.main-container .step-container .btn-footer button:hover,
+.main-container .step-container .btn-footer button:focus {
+    cursor: pointer;
+}
+
+.main-container .step-container .btn-footer div #back-btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.2em;
+    color: var(--Coolgray);
+    font-size: 0.9rem;
+    font-family: "Ubuntu-Medium";
+}
+
+.main-container .step-container .btn-footer div button:last-child {
+    background-color: var(--Marineblue);
+    border: none;
+    border-radius: 0.2em;
+    color: var(--Alabaster);
+    font-size: 0.9rem;
+    padding: 0.9em 1.2em;
+}
+
+div.main-container div.btn-footer div button#next-btn:focus,
+div.main-container div.btn-footer div button#next-btn:hover {
+    opacity: 0.8;
+}
+
+div.main-container div.btn-footer div button#back-btn:focus,
+div.main-container div.btn-footer div button#back-btn:hover {
+    color: var(--Marineblue);
+}
+
+@media (min-width: 62em) {
+    .main-container {
+        margin: 0 5em;
+        padding: 1.8em;
+        width: 60%;
+    }
+    .main-container .step-container h1{
+        font-size: 2rem;
+        margin-top: 1em;
+    }
+
+    .main-container .step-container .subtitle{
+        font-size: 1.15rem;
+    }
+
+    .main-container .step-container .btn-footer {
+        position: static;
+        margin-top: 3.5em;
+    }
+
+    .main-container .step-container .btn-footer div {
+        align-items: end;
+    }
+
+    div.main-container div.btn-footer div button#next-btn {
+        border-radius: 0.4em;
+        padding: 0.9em 1.5em;
+    }
+}

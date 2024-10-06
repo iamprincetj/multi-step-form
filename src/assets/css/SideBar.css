@@ -1,0 +1,100 @@
+.nav-container {
+    background-image: url('./images/bg-sidebar-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.nav-container .nav-list {
+    margin-top: 2em;
+}
+
+.nav-list .nav-item > span {
+    display: inline-block;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+    color: var(--White);
+    font-family: "Ubuntu-Medium";
+    margin: 0 0.5em;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.2em;
+    width: 20px;
+    height: 20px;
+}
+
+.nav-item #active {
+    background-color: var(--Lightblue);
+    color: var(--Marineblue);
+}
+
+.nav-item .nav-text {
+    display: none;
+}
+
+
+.nav-list p {
+
+}
+
+
+@media (min-width: 62em) {
+    .nav-container {
+        background-image: url('./images/bg-sidebar-desktop.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0.8em;
+        position: static;
+        margin: 1em;
+        height: inherit;
+        width: 30%;
+        z-index: 1;
+    }
+
+    .nav-list .nav-item > span {
+        width: 25px;
+        height: 25px;
+        line-height: 1.5;
+    }
+
+    .nav-container .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 1rem auto;
+    }
+    
+    .nav-list .nav-item {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 0.8em 0;
+        text-decoration: none;
+    }
+    
+    .nav-item .nav-text {
+        display: inline-block;
+        margin-left: 0.5em;
+        line-height: 1.5;
+    }
+
+    .nav-text span {
+        color: var(--Coolgray);
+        font-size: 0.9rem;
+    }
+
+    .nav-item p {
+        color: var(--Alabaster);
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,57 @@
+.input-container {
+    margin: 0.9em 0;
+}
+
+.input-container .label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.label-container span {
+    color: var(--Strawberryred);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.input-container label {
+    color: var(--Marineblue);
+    font-size: 0.8rem;
+}
+
+.input-container input {
+    display: block;
+    border: none;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    outline: 1px solid var(--Lightgray);
+    padding: 1em 1em;
+    margin: 0.1em 0;
+    width: 100%;
+}
+
+.input-container input:hover,
+.input-container input:focus {
+    cursor: pointer;
+    outline: 1px solid var(--Purplishblue);
+}
+
+.input-container input::placeholder {
+    color: var(--Coolgray);
+    font-size: 0.9rem;
+    font-family: "Ubuntu-Medium";
+}
+
+@media (min-width: 62em) {
+    .input-container {
+    }
+
+    .input-container input {
+        border-radius: 0.3em;
+    }
+
+    div.step1-container p.subtitle#subtitle {
+        margin-bottom: 2rem;
+    }
+}

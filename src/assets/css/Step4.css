@@ -1,0 +1,108 @@
+.check-container {
+    background-color: var(--Magnolia);
+    border-radius: 0.5em;
+    margin: 1.5em 0;
+    padding: 1em;
+}
+
+.check-container .selected-plan {
+    border-bottom: 1px solid var(--Lightgray);
+    padding-bottom: 0.6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.selected-plan h2 {
+    color: var(--Marineblue);
+    font-size: 0.9rem;
+}
+
+.selected-plan > span {
+    color: var(--Marineblue);
+    font-family: "Ubuntu-Bold";
+    font-size: 0.9rem;
+}
+
+.selected-plan div span {
+    color: var(--Coolgray);
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #626262;
+}
+
+.selected-plan div span:hover,
+.selected-plan div span:focus {
+    color: var(--Purplishblue);
+    border-color: var(--Purplishblue);
+}
+
+.check-container .selected-addons div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.selected-addons div:last-child {
+    margin-bottom: 0;
+}
+
+.selected-addons div p{
+    color: var(--Coolgray);
+    font-size: 0.9rem;
+}
+
+.selected-addons div span{
+    color: var(--Marineblue);
+    font-size: 0.85rem;
+}
+
+.total-container {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-container p {
+    color: var(--Coolgray);
+    font-size: 0.9rem;
+}
+
+.total-container h2 {
+    color: var(--Purplishblue);
+    font-size: 1rem;
+}
+
+
+
+div.step4-container div.btn-footer button#btn-confirm {
+    background-color: var(--Purplishblue);
+    font-family: "Ubuntu-Medium";
+}
+
+#btn-confirm:hover,
+#btn-confirm:focus {
+    opacity: 0.6;
+}
+
+
+/* MEDIA QUERY */
+
+@media (min-width: 62em) {
+    .check-container {
+        padding: 2em;
+    }
+
+    .check-container .selected-plan {
+        border-bottom: 1px solid var(--Lightgray);
+        padding-bottom: 1.5em;
+    }
+
+    #btn-confirm {
+        border-radius: 0.4em;
+    }
+}
