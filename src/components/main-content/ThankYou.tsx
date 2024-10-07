@@ -14,12 +14,6 @@ const ThankYou = () => {
         platform. If you ever need support, please feel free to email us at
         support@loremgaming.com.
       </p>
-      {/* <label htmlFor="toggle" className='toggle-switch'>
-        <input type="checkbox" name="toggle" id="toggle" />
-        <span className="slider round"></span>
-      </label>
-      <input type="checkbox" id="check" className='check-me'/>
-      <label htmlFor="check">Check me</label> */}
     </div>
   );
 };
