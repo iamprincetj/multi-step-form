@@ -1,5 +1,5 @@
 .nav-container {
-    background-image: url('/dist/images/bg-sidebar-mobile.svg');
+    background-image: url('/images/bg-sidebar-mobile.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,7 +48,7 @@
 
 @media (min-width: 62em) {
     .nav-container {
-        background-image: url('/dist/images/bg-sidebar-desktop.svg');
+        background-image: url('/images/bg-sidebar-desktop.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
